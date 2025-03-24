@@ -1,27 +1,37 @@
 {
-    "submissions": [
-        {
-            "id": 1,
-            "ownsBlueJeans": false,
-            "socioLocationId": 1
-        }
-    ],
-    "socioLocations": [
-        {
-            "id":1,
-            "label": "Urban"
-        },
-        {
-            "id": 2,
-            "label": "Suburban"
-        },
-        {
-            "id": 3,
-            "label": "Semi-Rural"
-        },
-        {
-            "id": 4,
-            "label": "Rural"
-        }
-    ]
+  "submissions": [
+    {
+      "id": "1",
+      "ownsBlueJeans": false,
+      "socioLocationId": 1
+    },
+    {
+      "id": "535c",
+      "ownsBlueJeans": true,
+      "socioLocationId": 1
+    },
+    {
+      "id": "36fb",
+      "ownsBlueJeans": false,
+      "socioLocationId": 4
+    }
+  ],
+  "socioLocations": [
+    {
+      "id": "1",
+      "label": "Urban"
+    },
+    {
+      "id": "2",
+      "label": "Suburban"
+    },
+    {
+      "id": "3",
+      "label": "Semi-Rural"
+    },
+    {
+      "id": "4",
+      "label": "Rural"
+    }
+  ]
 }
