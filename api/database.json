@@ -1,19 +1,19 @@
 {
   "submissions": [
     {
-      "id": "1",
-      "ownsBlueJeans": false,
-      "socioLocationId": 1
-    },
-    {
-      "id": "535c",
       "ownsBlueJeans": true,
-      "socioLocationId": 1
+      "socioLocationId": 2,
+      "id": 1
     },
     {
-      "id": "36fb",
+      "ownsBlueJeans": true,
+      "socioLocationId": 2,
+      "id": 2
+    },
+    {
       "ownsBlueJeans": false,
-      "socioLocationId": 4
+      "socioLocationId": 3,
+      "id": 3
     }
   ],
   "socioLocations": [
