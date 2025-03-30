@@ -1,7 +1,7 @@
 // Set up the transient state data structure and provide initial values
 const transientState = {
-    "ownsBlueJeans": false,
-    "socioLocationId": 0
+    ownsBlueJeans: false,
+    socioLocationId: 0
 }
 
 
@@ -19,6 +19,11 @@ export const setSocioLocationId = (chosenLocation) => {
 
 }
 
+const resetTransientState = () => {
+    transientState.ownsBlueJeans = false,
+    transientState.socioLocationId = 0
+}
+
 export const saveSurveySubmission = async () => {
     const postOptions = {
         method: "POST",
@@ -27,4 +32,8 @@ export const saveSurveySubmission = async () => {
     }
 
     const response = await fetch("http://localhost:8088/submissions", postOptions);
+    console.log("response: ", response)
+
+    resetTransientState();
+    console.log("transientState: ", transientState)
 }
