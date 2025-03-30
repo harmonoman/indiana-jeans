@@ -8,15 +8,12 @@ const transientState = {
 // Functions to modify each property of transient state
 export const setOwnsBlueJeans = (chosenOwnership) => {
     transientState.ownsBlueJeans = chosenOwnership;
-    console.log(transientState);
 }
 
 
 // Function to convert transient state to permanent state
 export const setSocioLocationId = (chosenLocation) => {
     transientState.socioLocationId = chosenLocation;
-    console.log(transientState);
-
 }
 
 const resetTransientState = () => {
@@ -32,8 +29,9 @@ export const saveSurveySubmission = async () => {
     }
 
     const response = await fetch("http://localhost:8088/submissions", postOptions);
-    console.log("response: ", response)
 
     resetTransientState();
-    console.log("transientState: ", transientState)
+
+    const customEvent = new CustomEvent("newSubmissionCreated");
+    document.dispatchEvent(customEvent);
 }
