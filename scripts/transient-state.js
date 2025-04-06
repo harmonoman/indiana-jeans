@@ -32,6 +32,5 @@ export const saveSurveySubmission = async () => {
 
     resetTransientState();
 
-    const customEvent = new CustomEvent("newSubmissionCreated");
-    document.dispatchEvent(customEvent);
+    document.dispatchEvent(new CustomEvent("newSubmissionCreated"));
 }
